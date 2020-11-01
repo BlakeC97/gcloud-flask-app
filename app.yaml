@@ -1,0 +1,5 @@
+runtime: python38
+
+instance_class: F1
+
+entrypoint: uwsgi --http 127.0.0.1 --processes 1 --threads 2 --module flask_app:create_app()
