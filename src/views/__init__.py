@@ -1,3 +1,2 @@
 from .homepage import homepage
-
-__all__ = ["homepage"]
+from .pdf_ocr import pdf_ocr

@@ -1,9 +1,11 @@
 html {
+    height: 100%
     font-size: 24px;
     text-align: center;
     font-family: 'Oswald', sans-serif;
     /* Gradients: https://cssgradient.io/ */
-    background: linear-gradient(320deg, #3494E6 0%, #EC6EAD 100%);
+    /* Gradient hack to prevent repeating https://stackoverflow.com/a/3294418 */
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#cbccc8)) fixed;
 }
 
 body {
