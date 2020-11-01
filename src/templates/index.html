@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>A Sample Page</title>
+        <link href="{{ url_for("static", filename="styles/style.css") }}" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Deez Nuts</h1>
+        <img src="{{ url_for("static", filename="images/bean.gif") }}" alt="A Real Human Bean">
+        <p>Hello everybody, this is Chris' pathetic attempt at making a website!</p>
+        <p>
+            I know you're asking yourself, "<strong>Bro why does this look like some shit from the 90s?</strong>"
+            This is what happens when a programmer tries to do <i>"graphic design"</i>.
+        </p>
+        <p>If you made it this far, here's <a href="https://www.youtube.com/watch?v=WchseC9aKTU">something you might like</a>.</p>
+
+        <h2>Contact</h2>
+        <p>If you'd like to call the author a dumbass for making this ugly site, he can be reached at:</p>
+        <ul>
+            <li> <a href="https://twitter.com/HerpEaze">Twitter</a> </li>
+            <li> <a href="https://steamcommunity.com/id/herpeaze/">Steam</a> </li>
+        </ul>
+    </body>
+</html>
