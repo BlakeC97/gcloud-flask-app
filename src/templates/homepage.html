@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Welcome{% endblock %}
+
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+    <h1>Deez Nuts</h1>
+    <p>ａ　ｅ　ｓ　ｔ　ｈ　ｅ　ｔ　ｉ　ｃ　ｍ　ｅ　ｍ　ｅ</p>
+
+    <img src="{{ url_for("static", filename="images/bean.gif") }}" alt="A Real Human Bean">
+{% endblock %}
