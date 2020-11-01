@@ -6,5 +6,11 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Nothing here yet.</h1>
+    <h2>Upload a PDF for transcription</h2>
+    <form id="uploadbanner" enctype="multipart/form-data" method="POST" action="#">
+       <p><input id="fileupload" name="file" type="file" accept="application/pdf"></p>
+       <p><input type="submit" id="submit" value="Submit"></p>
+    </form>
+    <p>Max allowed file size is {{ (config.MAX_CONTENT_LENGTH / 1024 / 1024)|int }}MB.</p>
+    <p>The transcription process may take a few minutes -- please be patient!</p>
 {% endblock %}
