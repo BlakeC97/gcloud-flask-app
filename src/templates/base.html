@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% block head %}
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %} - Bottom Text</title>
+        <link href="{{ url_for("static", filename="styles/base.css") }}" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        {% endblock %}
+    </head>
+    <body>
+        <div id="content">{% block content %}{% endblock %}</div>
+        <div id="footer">
+            {% block footer %}
+            <h2>Contact</h2>
+            <a class="contact_link" href="https://twitter.com/HerpEaze">Twitter</a>
+            {% endblock %}
+        </div>
+    </body>
+</html>

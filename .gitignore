@@ -1,1 +1,4 @@
 .idea/
+uploads/
+*.png
+*.pdf
