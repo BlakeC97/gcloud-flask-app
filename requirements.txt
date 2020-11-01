@@ -1,0 +1,6 @@
+flask
+numpy
+scikit-image
+pdf2image
+pytesseract
+Pillow
